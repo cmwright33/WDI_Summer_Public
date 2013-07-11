@@ -1,4 +1,4 @@
-class ContactsController < ApplicationController
+dclass ContactsController < ApplicationController
   # Controller actions can do several things.
   # Non-inclusive list of examples below
 
