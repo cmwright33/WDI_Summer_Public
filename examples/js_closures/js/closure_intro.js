@@ -11,8 +11,13 @@ function handleStudents(){
 }
 
 // What type of variable is nextStudent?
+<<<<<<< HEAD
 // t: Function
 var nextStudent = handleStudents();
+=======
+// t: ???
+var nextStudent = handleStudents(); 
+>>>>>>> upstream/master
 var nextStudent1 = handleStudents();
 
 // onload
@@ -20,6 +25,11 @@ window.onload = function(){
   // Adding an event handler to our addStudent button
   document.getElementById("addStudent").onclick = function(){
     document.getElementById('students').innerHTML += nextStudent() + '<br/>\n';
+  };
+
+    // Adding an event handler to our addStudent button
+  document.getElementById("addStudent1").onclick = function(){
+    document.getElementById('students').innerHTML += nextStudent1() + '<br/>\n';
   };
 
   document.getElementById("clearStudents").onclick = function(){
