@@ -13,7 +13,9 @@ var word = {
   checkLetters: function(guessedLetters){
 
     var correctLetters = "";
+    var correctLetters = _.intersection(this.secretWord, guessedLetters);
     var wrongLetters = [];
+    var wrongLetters
     var superSecretWord = secretWord.split("");
   _.each(superSecretWord, function(letter){
     if (_.contains(superSecretWord, letter) === true){
@@ -43,7 +45,7 @@ var player = {
 
   // Takes a new letter as input and updates the game
   makeGuess: function(letter){},
-
+  palyer.guessedLetters.push(letter);
   // Check if the player has won and end the game if so
   checkWin: function(wordString){},
 
