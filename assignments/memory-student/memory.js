@@ -24,26 +24,22 @@ var lastId = '',
 $(function() {
   $('#small').click(startGame);
   $('#medium').click(startGame);
-  $('#column').click(cardClick);
+  // $('#column').click(cardClick);
 });
 
 // Initializes the game and creates the board
 function startGame() {
       for(var i = 0; i < lettersSmall.length; i++) {
         $('#game').append('<div class="column" id='+ i +'></div>');
-      }
+        $('#' + i).click(cardClick);
+      };
 }
-
-//       for(var i = 0; i < lettersSmall.length; i++) {
-//         $('#game').append('<div class="column" id='+ i +'>' + lettersSmall[i] + '</div>');
-//       }
-// }
 
 // Flips a card and checks for a match
 function cardClick() {
-  for(var i = 0; i < lettersSmall.length; i++) {
-    $('game').append(lettersSmall[i]);
-  }
+  lastId = $(this).attr('id');
+  lastCard = $(this).text(lettersSmall[lastId]);
+
 }
 
 //Add hoverclass to cards.
