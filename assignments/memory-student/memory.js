@@ -40,6 +40,19 @@ function cardClick() {
   lastId = $(this).attr('id');
   lastCard = $(this).text(lettersSmall[lastId]);
 
+// if (lastCard === lettersSmall[$(this).attr('id')] && lastId !== $(this).attr('id')) {
+//           $('#' +lastId).addClass('found');
+//           $(this).addClass('found');
+//           lastId = "";
+//           if ($('.found').length === 10) {
+//               $('#game div').addClass('won');
+//           }
+//       } else {
+//           $('#' + lastId).text(' ');
+//           lastId = $(this).attr('id');
+//           lastCard = lettersSmall[$(this).attr('id')];
+//       }
+
 }
 
 //Add hoverclass to cards.
