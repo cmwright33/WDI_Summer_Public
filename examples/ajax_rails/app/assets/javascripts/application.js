@@ -8,7 +8,11 @@
 //= require jquery_ujs
 //= require_tree .
 
+<<<<<<< HEAD
 // STEP 11: Note this a function that takes a task JavaScript object as an argument
+=======
+// STEP 11: Note this function that takes a task JavaScript object as an argument
+>>>>>>> upstream/master
 // This function will generate a DOM version of the task javasctipt object it takes as an argument
 var appendTask = function(task){
 	// Created local variables that hold the jQuery selectors for:
@@ -31,9 +35,12 @@ var appendTask = function(task){
 	completeButton.click(function(){
 		$.ajax({
 			// STEP 24: Make the step 15 `.click()` make an ajax call to the `complete` action and set the `dataType` setting to `script`
+<<<<<<< HEAD
 		dataType: 'script',
 		type: 'put',
 		url: '/complete/'+ task.id
+=======
+>>>>>>> upstream/master
 		})
 	});
 
