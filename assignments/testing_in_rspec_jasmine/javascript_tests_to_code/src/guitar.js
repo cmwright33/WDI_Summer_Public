@@ -6,11 +6,10 @@ if (typeof Object.create !== 'function') {
 	};
 }
 
-var new_guitar = Object.create(guitar);
+// var new_guitar = Object.create(guitar);
 
 var guitar = {
-
-	name: "The Best",
+	name: "Fender Esquire",
 	numberOfStrings: 6,
 	volume: 5,
 
@@ -19,19 +18,29 @@ var guitar = {
 	},
 
 	breakString: function(numberOfStrings) {
-		this.numberOfStrings = parseInt(numberOfStrings) - 1
-			if (numberOfStrings < 1) {
+		this.numberOfStrings = this.numberOfStrings - 1
+			if(this.numberOfStrings < 1) {
 				guitar.volume = 0;
 		}
-	};
+	},
 
 	restring: function() {
 		guitar.numberOfStrings = 6;
 		guitar.volume = 5;
-	};
+	},
+
+	playRock: function() {
+		if(this.numberOfStrings > 0) {
+			this.volume = 11;
+		}
+	},
+
+	restring: function() {
+		this.numberOfStrings = 6;
+		this.volume = 5;
+	}
+
 };
-
-
 
 
 
