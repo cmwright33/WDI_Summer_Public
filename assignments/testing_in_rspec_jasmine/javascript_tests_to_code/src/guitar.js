@@ -9,6 +9,7 @@ if (typeof Object.create !== 'function') {
 // var new_guitar = Object.create(guitar);
 
 var guitar = {
+<<<<<<< HEAD
 	name: "Fender Esquire",
 	numberOfStrings: 6,
 	volume: 5,
@@ -94,3 +95,6 @@ var guitar = {
 // 		return "meedley meedley meedley meedley meedley meedley meedley meedley meedley meedley meedley meedley MEEEEEEEEEEEEEEEE. \'And the dragon comes in the NIIIiiiiIIIiiiiIIIIIIIIiiiiiiiiiiiIIIIIIIIiiiIIGGHH\'";
 // 	}
 // };
+=======
+};
+>>>>>>> upstream/master

@@ -35,12 +35,10 @@ var appendTask = function(task){
 	completeButton.click(function(){
 		$.ajax({
 			// STEP 24: Make the step 15 `.click()` make an ajax call to the `complete` action and set the `dataType` setting to `script`
-<<<<<<< HEAD
 		dataType: 'script',
 		type: 'put',
 		url: '/complete/'+ task.id
-=======
->>>>>>> upstream/master
+
 		})
 	});
 
