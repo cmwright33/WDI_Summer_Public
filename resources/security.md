@@ -13,6 +13,7 @@
 * [Owasp-rails-security. 2008, but worth reading](https://www.owasp.org/index.php/File:Owasp-rails-security.pdf)
 * [XSS Cheat Sheet](https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet)
 * [Open Locksport](http://locksport.com/)
+* [Removing Passwords from Github](https://help.github.com/articles/remove-sensitive-data)
 
 ## Tools:
 
@@ -29,7 +30,7 @@ As a warning, in several countries worldwide, possession of security audit tools
 
 * [Hackers](http://www.imdb.com/title/tt0113243/) (fiction)
 * [Sneakers](http://www.imdb.com/title/tt0105435/) (fiction)
-* [Defcon Documentary by Jason Scott](www.defcon.org/html/links/dc-torrent.html) (documentary)
+* [Defcon Documentary by Jason Scott](http://www.defcon.org/html/links/dc-torrent.html) (documentary)
 
 ## Events
 
